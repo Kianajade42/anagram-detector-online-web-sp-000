@@ -5,7 +5,8 @@ attr_accessor : matches
 def initialize(words)
   @matches=words
 end
-def same(array)
+
+def match(array)
     array.select {|x| x.split("").sort == @name.split("").sort}
   end
 
